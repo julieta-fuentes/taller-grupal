@@ -1,3 +1,14 @@
+document.getElementById("regBtn").addEventListener("click", Validar);
+
+function Validar() {
+var formulario = document.getElementById("formu");
+if (formulario.checkValidity()) {
+showAlertSuccess(); // Llamar a la función de éxito
+} else {
+showAlertError(); // Llamar a la función de error
+}
+}
+
 function showAlertSuccess() {
     document.getElementById("alert-success").classList.add("show");
 }
